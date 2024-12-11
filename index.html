@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ランダムジャンプ</title>
+    <script type="text/javascript">
+      function randomJump() {
+        var urls = [
+          "https://docs.google.com/forms/d/e/1FAIpQLSd2XuVTnqTxz67kzr5Zg-I82x58ZPddUuj6w8P-rFfjZVWWfA/viewform?usp=sf_link",
+          "https://docs.google.com/forms/d/e/1FAIpQLSez1S1qJ0aESQ_IhDlr_IDUKSuFNqoJE57-95fqeGUjfK5aOQ/viewform?usp=header",
+          "https://docs.google.com/forms/d/e/1FAIpQLSc3Fcyk4lAu472xKjrHlSIAfkPMyEfKa6oZYLglEi4aRPmTCA/viewform?usp=sharing",
+          "https://docs.google.com/forms/d/e/1FAIpQLSeOf2H6cZH5oQzlUStpkw0oIWj9mnQL2M2vlWTxcat1rWWV1Q/viewform?usp=dialog"
+        ];
+        var randomIndex = Math.floor(Math.random() * urls.length);
+        window.location.href = urls[randomIndex];
+      }
+    </script>
+  </head>
+  <body>
+    <h1>ランダムリンク</h1>
+    <p>以下のリンクをクリックすると、ランダムに4つのURLのいずれかに移動します。</p>
+    <a href="javascript:void(0);" onclick="randomJump();">ランダムに移動</a>
+  </body>
+</html>
